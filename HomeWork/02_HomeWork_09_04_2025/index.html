@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Form</title>
+  </head>
+
+  <body>
+    <form onsubmit="handleSubmit(event)">
+      <div>
+        <img src="./images/banner.jpg" alt="" />
+        <hr />
+        <h1>Оформление заказа:</h1>
+        <hr />
+      </div>
+
+      <br />
+      <div>
+        <label for="firstname">Имя: </label>
+        <input
+          id="firstname"
+          type="text"
+          placeholder="Ваше имя..."
+          name="firstname"
+          required
+        />
+      </div>
+
+      <br />
+      <div>
+        <label for="lastname">Фамилия: </label>
+        <input
+          id="lastname"
+          type="text"
+          placeholder="Ваша фамилия..."
+          name="lastname"
+          required
+        />
+      </div>
+
+      <br />
+      <div>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Введите ваш email..."
+          required
+        />
+      </div>
+
+      <br />
+      <!-- Паттерн для телефона (код города) XXX-XX-XX -->
+      <div>
+        <label for="phone">Телефон для связи: </label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          title="Введите номер в формате (XXX) XXX-XX-XX (допустимо указание номера без скобок и дефисов)"
+          pattern="\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}"
+          placeholder="(XXX) XXX-XX-XX"
+          required
+        />
+      </div>
+      <br />
+      <hr />
+      <div>
+        <label for="">Укажите адрес доставки: </label>
+        <br /><br />
+        <label for="cityindex">Индекс: </label>
+        <input
+          id="cityindex"
+          name="cityindex"
+          type="text"
+          title="Укажите 5 значный индекс"
+          pattern="^\d{5}$"
+          required
+        />
+        <br /><br />
+        <label for="city">Город: </label>
+        <input id="city" name="city" type="text" required />
+        <br /><br />
+        <label for="street">Улица: </label>
+        <input id="street" name="street" type="text" required />
+      </div>
+      <br />
+      <hr />
+      <div>
+        <label for=""> <b> Выберите способ оплаты: </b></label>
+        <label for="cash"><em> Наличными </em></label>
+        <input type="radio" name="payment" id="cash" value="cash" required />
+        <label for="card"><em> Картой </em></label>
+        <input type="radio" name="payment" id="card" value="card" checked />
+      </div>
+      <br />
+      <hr />
+
+      <div>
+        <details>
+          <summary>Правила доставки и оплаты товара.</summary>
+          <p>
+            Детальное описание правил и соглашений по доставке товаров и их
+            оплаты.
+          </p>
+        </details>
+        <br />
+        <input type="checkbox" name="agree" id="accept" required />
+        <label for="">Я согласен с правилами доставки и оплаты товара.</label>
+      </div>
+      <br />
+      <div>
+        <button type="reset">Очистить все поля</button>
+        <button type="submit">Оформить доставку</button>
+      </div>
+    </form>
+
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        alert("Спасибо за ваш заказ!");
+      }
+    </script>å
+  </body>
+</html>
