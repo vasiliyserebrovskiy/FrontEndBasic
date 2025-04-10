@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Ticket Booking</title>
+</head>
+<body>
+  <h1>Book Your Ticket</h1>
+
+  <form action="/book-ticket">
+    <div>
+      <label for="fullName">Full Name:</label>
+      <input
+        id="fullName"
+        type="text"
+        placeholder="Enter your full name"
+        required
+      />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="event">Choose Event:</label>
+      <select id="event" required>
+        <option value="">-- Select an event --</option>
+        <option value="concert">Live Concert</option>
+        <option value="theatre">Theatre Show</option>
+        <option value="expo">Tech Expo</option>
+      </select>
+    </div>
+
+    <br />
+
+    <div>
+      <label for="tickets">Number of Tickets:</label>
+      <input
+        id="tickets"
+        type="number"
+        min="1"
+        max="10"
+        required
+      />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="date">Event Date:</label>
+      <input
+        id="date"
+        type="date"
+        required
+      />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+
+    <br />
+
+    <div>
+      <label>Delivery Method:</label><br />
+      <input type="radio" id="emailDelivery" name="delivery" value="email" required />
+      <label for="emailDelivery">Email</label>
+      <input type="radio" id="smsDelivery" name="delivery" value="sms" />
+      <label for="smsDelivery">SMS</label>
+    </div>
+
+    <br />
+
+    <div>
+      <label for="terms">
+        <input type="checkbox" id="terms" required />
+        I agree to the terms and conditions
+      </label>
+    </div>
+
+    <br />
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+</body>
+</html>

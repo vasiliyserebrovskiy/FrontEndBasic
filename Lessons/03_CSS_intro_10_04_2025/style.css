@@ -1,0 +1,84 @@
+body {
+  background-color: antiquewhite;
+}
+
+/* hr {
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, #00f260, #0575e6); // зелёный → синий /
+  border-radius: 5px;
+} 
+*/
+
+hr {
+  border: none;
+  height: 4px;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #22d3ee);
+  background-size: 600% 600%;
+  animation: gradientMove 6s ease infinite;
+  border-radius: 5px;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+form {
+  border: 2px solid rgb(25, 112, 12);
+  padding: 0 20px;
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+div {
+    margin: 10px 0;
+    
+}
+
+#name,
+#email,
+#password,
+#phone {
+  width: 100%;
+  padding: 5px 0 5px 5px;
+  border-radius: 10px;
+  border: antiquewhite;
+}
+
+.button {
+    width: fit-content;
+    margin: 20px auto 30px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+button[type=reset] {
+    background-color: #f44336;
+}
+button[type=reset]:hover {
+    background-color: #90271f;
+}
+
+button[type=submit] {
+    background-color: #4caf50;
+}
+button[type=submit]:hover {
+    background-color: #347b37;
+}
