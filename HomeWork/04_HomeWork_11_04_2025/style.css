@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 1 auto;
+  background-color: antiquewhite;
+}
+
+h1 {
+  color: rgba(36, 51, 104, 0.8);
+  font-family: "Rubik Puddles", system-ui;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 600;
+  font-style: normal;
+  margin: 1rem 1rem;
+  text-decoration: underline;
+  color: rgb(110, 82, 11);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 1rem 2rem;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color: rgb(187, 155, 113);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-image: url("./images/coffee.jpg");
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 200px auto;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem auto;
+  gap: 3rem;
+  justify-content: center;
+  
+}
+
+div {
+  display: flexbox;
+  width: 25%;
+  border-radius: 20px;
+  border: 2px solid rgba(65, 41, 6, 0.8);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.8);
+  padding: 1rem 1rem;
+  background-color: blanchedalmond;
+  text-align: justify;
+  text-indent: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 1rem 1rem;
+ 
+}
+
+footer {
+    background-color: black;
+    height: 3rem;
+    display: flex;
+   
+    justify-content: space-between;
+    align-content: center;
+    
+}
+footer p {
+    font-style: italic;
+    color: rgb(187, 164, 36);
+    justify-content: center;
+    align-content: center;
+}
