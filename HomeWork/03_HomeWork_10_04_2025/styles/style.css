@@ -6,7 +6,7 @@ body {
   border-radius: 10px;
   border-style: groove;
   width: 80%;
-  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin: 10px auto;
   background-color: blanchedalmond;
