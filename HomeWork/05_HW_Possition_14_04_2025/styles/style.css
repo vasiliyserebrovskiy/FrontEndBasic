@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+}
+.navigation {
+    background-color: rgb(12, 12, 76);
+    padding: 25px 50px 15px;
+    position: fixed;
+    height: 60px;
+    font-size: 40px;
+    font-style: italic;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    color: rgba(237, 211, 14, 0.775);
+}
+
+body {
+    height: 1500px;
+    background-color: beige;
+}
+
+.main-block {
+    /* height: 500px; */
+    position: relative;
+}
+
+div {
+    border: 2px solid rgb(5, 77, 129);
+    margin: 10px 10px;
+    background-color: rgb(226, 226, 187);
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    padding: 20px 40px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.7);
+}
+
+div p {
+    padding: 0 60px;
+}
+
+.card-one {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+
+}
+
+.card-second {
+    position: absolute;
+    top: 460px;
+    left: 430px;
+}
+
+.card-third {
+    position: absolute;
+    top: 910px;
+    left: 830px
+
+}
+
+img {
+    width: 250px;
+    height: 300px;
+    padding: 15px 20px;
+}
+
+footer {
+    position: absolute;
+    top: 1400px;
+    background-color: black;
+    color: bisque;
+    height: 20px;
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+}
+
+footer p {
+    margin: 2px;
+    position: absolute;
+    right: 20px;
+}
