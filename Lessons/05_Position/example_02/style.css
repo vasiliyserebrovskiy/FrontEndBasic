@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+}
+/* fixed - выпадает из нормального потока документа */
+.navigation {
+    background-color: lightgray;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    width: 100%;
+
+}
+
+body {
+    height: 3000px;
+}
+
+.card {
+    height: 300px;
+    width: 200px;
+    border-radius: 18px;
+    padding: 10px;
+    margin: 20px;
+    /* by default position is static */
+    /* position: static; */
+}
+
+.red {
+    background-color: lightcoral;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+/* position relative */
+/* top, bottom, left, right */
+.relative-block {
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: lightsalmon;
+    height: 60px;
+    width: 60px;
+    /* z work only with elements with non static position */
+    z-index: 1;
+    position: fixed;
+    /* bottom: 200px; */
+    right: 20px;
+    bottom: 20px;
+}
+
+/* sticky -  залипает при прокрутке, в определенной позиции относительно родителя*/
+
+.sticky-card {
+    position: sticky;
+    top: 100px;
+}
