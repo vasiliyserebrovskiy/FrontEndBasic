@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'MyFont'; 
+    src: url('../fonts/Neue\ Haas\ Unica\ W1G/') format('woff2');;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  header {
+    height: 116px;
+    top: 0;
+    box-shadow: -1px 10px 5px -6px rgba(189, 189, 189, 0.75);
+    -webkit-box-shadow: -1px 10px 5px -6px rgba(189, 189, 189, 0.75);
+    -moz-box-shadow: -1px 10px 5px -6px rgba(189, 189, 189, 0.75);
+    position: fixed;
+    width: 100%;
+  }
+  .header-container {
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+
+.banner {
+  background-color: #56753a;
+  height: 36px;
+  width: 100%;
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  gap: 150px;
+}
+
+.navigation {
+  background-color: white;
+  height: 80px;
+  /* margin-top: 36px; */
+  /* padding-top: 70px; */
+  /* position: fixed; */
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.container-left {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  justify-items: flex-end;
+
+}
+
+.logo1 {
+  width: 60px;
+  height: auto;
+}
+
+.logo2 {
+  width: 25px;
+  height: auto;
+}
+
+.logo3 {
+  width: 20px;
+  height: auto;
+}
+
+.logo4 {
+  width: 60px;
+  height: auto;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-family: Neue Haas Unica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2a3e39;
+  justify-content: space-between;
+
+  text-transform: none;
+
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #12332b;
+  cursor: pointer;
+  gap: 8px;
+  
+}
+
+.dropdown-btn:hover {
+    transform: translateY(-2px); 
+    font-weight: bold; 
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: 4px solid #56753a;
+  min-width: 160px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-content li a {
+  color: #12332b;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+.dropdown-content a:hover {
+    color:#56753a;
+    font-weight: bold; 
+  }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+
+}
+
+a:hover {
+    transform: translateY(-2px); 
+    font-weight: 800;
+}
+
+.first-link {
+    
+    font-weight: 700;
+}
+
+.login {
+    display: flex;
+    font-family: Neue Haas Unica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2a3e39;
+
+}
+
+.cart {
+    width: 27px;
+
+}
+
+.btn-cart {
+    border: none;
+    background-color: white;
+
+}
+
+.stickyBar-comboContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30PX;
+ 
+}
+
+.top-logo1 {
+    width: 15px;
+    height: auto;
+    padding-right: 5px;
+}
+
+.top-logo2 {
+    width: 15px;
+    height: auto;
+    padding-right: 5px;
+}
+
+.top-logo3 {
+    width: 15px;
+    height: auto;
+    padding-right: 5px;
+}
+
+.top-logo4 {
+    width: 15px;
+    height: auto;
+    padding-right: 5px;
+}
+
+.top1 {
+    display: flex;
+    align-items: center;
+}
+.top2 {
+    display: flex;
+    align-items: center;
+}
+.top3 {
+    display: flex;
+    align-items: center;
+}
+.top4 {
+    display: flex;
+    align-items: center;
+}
+
+
+.item-stickyBar_comboText {
+    font-family: Neue Haas Unica, sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+}
+
+.dropdown2 .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid currentColor;
+  }
+  
