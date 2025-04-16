@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@font-face {
+  font-family: "RecoletaAltBold";
+  src: url("../fonts/Recoleta\ Alt\ Bold.otf") format("opentype"); /* путь к файлу */
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "RecoletaRegular";
+  src: url("../fonts/Recoleta\ Alt\ Bold.otf") format("opentype"); /* путь к файлу */
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "RecoletaRegular";
+  background-color: antiquewhite;
+  margin: auto;
+}
+
+main {
+  display: flex;
+  /* width: 70%; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* text-align: center; */
+}
+
+h1 {
+  width: 100%;
+}
+
+.main-block {
+  display: flex;
+  /* flex-direction: column;    */
+  margin: 10px;
+  justify-content: center;
+  /* align-items: center; */
+  width: 50%;
+  gap: 32px;
+}
+
+.base-element {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.element-image {
+  width: 300px;
+  height: 300px;
+  /* border: 2px solid red; */
+  /* margin: 5px 5px; */
+
+  /* background-position: center; */
+}
+
+.image-one {
+  background-image: url("../img/Product01_2x_302c91ad-2f71-49cc-b352-94d5211189a2_1200x.webp");
+  background-size: cover;
+}
+
+.image-two {
+  background-image: url("../img/Product02_2x_efd32340-fb2e-4673-a8dc-3996752ef37e_1200x.webp");
+  background-size: cover;
+}
+.image-three {
+  background-image: url("../img/Product03_2x_a6147c4e-0603-4e3f-9d97-d1c4452088ae_1200x.webp");
+  background-size: cover;
+}
+.image-four {
+  background-image: url("../img/Product04_2x_00fde3e2-e0bb-46f0-a904-45730d9e2127_1200x.webp");
+  background-size: cover;
+}
+
+.element-information {
+  font-family: Neue Haas Unica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  width: 280px;
+  height: 300px;
+  /* border: 2px solid red; */
+  /* margin: 5px 5px; */
+  background-color: #f4f3eb;
+  justify-content: space-around;
+}
+
+.element-information-cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.element-information-cost .price-main {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.element-information-cost .price-per-tree {
+  font-size: 16px;
+  margin: 0;
+}
+
+button {
+  background-color: #4f772d;
+  border: thin solid #4f772d;
+  padding: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  line-height: 1.2;
+  font-size: 14px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 20px;
+  margin: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b2a85e;
+  color: black;
+  border: none;
+}
