@@ -139,3 +139,64 @@ button:hover {
   color: black;
   border: none;
 }
+
+.footer {
+  background-color: #1b342d;
+  color: #fff;
+  font-family: Neue Haas Unica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+  max-width: 1220px;
+  width: calc(90% + 20px);
+  margin: 0 auto;
+}
+
+.footer_credits {
+  text-align: center;
+  padding-bottom: 24px;
+  color: #cfd1ad;
+  font-weight: 400;
+}
+
+
+.footer__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+.footer-block {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+ul {
+  list-style: none;
+  line-height: 1.2;
+}
+
+.footer-content-1 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+}
+.footer-content-1 img {
+  width: 200px;
+}
+
+.footer-title {
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.footer-class-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
