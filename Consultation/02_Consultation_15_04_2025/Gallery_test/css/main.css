@@ -1,0 +1,93 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing:border-box ;
+}
+/* .box{
+    width: 250px;
+    height: 250px;
+    border: 2px solid red;
+} */
+ body{
+   background-color: #efefef; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+
+ .photo{
+    width:calc(50% - 40px);
+    /* width: calc(50% - 40px);
+    50%: Это 50% ширины родительского элемента.
+    - 40px: Это вычитание 40 пикселей из значения 50%.
+    Таким образом, итоговая ширина элемента будет
+     равна половине ширины его родительского элемента минус 40 пикселей. */
+    height:calc((35vw - 40px) / 16 * 9);
+   
+    /* 35vw: Это 35% от ширины окна просмотра (viewport width).
+    - 40px: Это вычитание 40 пикселей из значения 35vw. */
+    margin: 20px;
+    background-color: orange;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.9s ease;
+ }
+ main{
+    margin: auto;
+    width: 70%;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.354) ;
+     /* box-shadow: [сдвиг по X] [сдвиг по Y] [размытие] [растяжение] [цвет]; */
+ }
+
+ h1{
+    text-align: center;
+    width: 100%;
+    font-size: 48px;
+ }
+
+ .photo:hover{
+    transform: scale(1.7) ;
+    cursor: pointer;
+ }
+
+ .photo1{
+    background-image: url("../img/img1.jpeg");
+ }
+ .photo2{
+    background-image: url("../img/img2.jpeg");
+ }
+ .photo3{
+    background-image: url("../img/img3.jpeg");
+ }
+ .photo4{
+    background-image: url("../img/img4.jpeg");
+ }
+ .photo5{
+    background-image: url("../img/img5.jpeg");
+ }
+ .photo6{
+    background-image: url("../img/img6.jpeg");
+ }
+ .photo7{
+    background-image: url("../img/img7.jpeg");
+ }
+ .photo8{
+    background-image: url("../img/img8.jpeg");
+ }
+ .photo9{
+    background-image: url("../img/img9.jpeg");
+ }
+ .photo10{
+    background-image: url("../img/img10.jpeg");
+ }
+ .photo11{
+    background-image: url("../img/img11.jpg");
+ }
+ .photo12{
+    background-image: url("../img/img12.jpeg");
+ }

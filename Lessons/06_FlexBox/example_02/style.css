@@ -1,0 +1,37 @@
+body {
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav-items {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+section {
+    width: 50%;
+    
+}
+
+.left-nav-items {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 12px;
+}
+
+.right-nav-items {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 12px;
+}

@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+main {
+  background-color: lightblue;
+  padding: 24px;
+}
+
+header {
+    height: 100px;
+}
+.navigation {
+    position: fixed;
+    /* top:0; */
+    width: 100%;
+    z-index: 6;
+    background-color: aqua;
+}
+.card {
+  margin: 20px;
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+/* Тритий дочерний элемент для main */
+.card:nth-child(3) {
+    position: relative;
+    left: 350px;
+}
+
+.card:nth-child(4) {
+    position: relative;
+    left: 700px;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+img {
+    width: 200px;
+}
