@@ -80,8 +80,6 @@
   list-style: none;
 } */
 
-
-
 .right {
   display: flex;
   justify-content: flex-end;
@@ -89,13 +87,14 @@
 
 .main-menu {
   display: flex;
-  justify-content: flex-end;
+  /* flex-direction: row; */
+  /* justify-content: flex-end; */
   gap: 15px;
   font-family: Neue Haas Unica, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #2a3e39;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   text-transform: none;
 
