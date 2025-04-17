@@ -45,7 +45,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  
+  gap: 40px;
 }
 
 .container-left {
@@ -94,14 +94,12 @@
   font-weight: 400;
   font-size: 16px;
   color: #2a3e39;
-  /* justify-content: space-between; */
-
+  justify-content: space-between;
   text-transform: none;
-
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-
+  align-items: center;
 
 }
 
