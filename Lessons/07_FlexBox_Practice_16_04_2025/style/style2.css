@@ -1,51 +1,76 @@
 @font-face {
-    font-family: 'MyFont'; 
-    src: url('../fonts/Neue\ Haas\ Unica\ W1G/') format('woff2');;
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "MyFont";
+  src: url("../fonts/Neue\ Haas\ Unica\ W1G/") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  header {
-    height: 116px;
+header {
+  /* height: 116px;
     top: 0;
     box-shadow: -1px 10px 5px -6px rgba(189, 189, 189, 0.75);
     -webkit-box-shadow: -1px 10px 5px -6px rgba(189, 189, 189, 0.75);
     -moz-box-shadow: -1px 10px 5px -6px rgba(189, 189, 189, 0.75);
     position: fixed;
-    width: 100%;
-  }
-  .header-container {
-    height: 116px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-  }
+    width: 100%; */
+  height: 140px;
+  box-shadow: -1px 10px 5px -6px rgba(189, 189, 189, 0.75);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  
+}
+.header-container {
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+}
 
 .banner {
-  background-color: #56753a;
+  /* background-color: #56753a;
   height: 36px;
   width: 100%;
-  /* position: fixed; */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 150px; */
+  background-color: #56753A;
+  height: 36px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1001;
+  display: flex;
   justify-content: center;
   gap: 150px;
 }
 
 .navigation {
-  background-color: white;
+  /* background-color: white;
   height: 80px;
-  /* margin-top: 36px; */
-  /* padding-top: 70px; */
-  /* position: fixed; */
   display: flex;
-  /* justify-content: space-between; */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   gap: 40px;
+  padding: 10px 20px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10; */
+  padding-top: 36px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1000;
 }
 
 .container-left {
@@ -53,7 +78,6 @@
   gap: 30px;
   align-items: flex-end;
   justify-items: flex-end;
-
 }
 
 .logo1 {
@@ -100,7 +124,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   align-items: center;
-
 }
 
 .dropdown-btn {
@@ -110,15 +133,12 @@
   color: #12332b;
   cursor: pointer;
   gap: 8px;
-  
 }
 
 .dropdown-btn:hover {
-    transform: translateY(-2px); 
-    font-weight: bold; 
+  transform: translateY(-2px);
+  font-weight: bold;
 }
-
-
 
 .dropdown-content {
   display: none;
@@ -136,125 +156,115 @@
   padding: 10px 16px;
   text-decoration: none;
   display: block;
-
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-
 }
 .dropdown-content a:hover {
-    color:#56753a;
-    font-weight: bold; 
-  }
+  color: #56753a;
+  font-weight: bold;
+}
 
 a {
   text-decoration: none;
   color: inherit;
   transition: all 0.3s ease;
-
 }
 
 a:hover {
-    transform: translateY(-2px); 
-    font-weight: 800;
+  transform: translateY(-2px);
+  font-weight: 800;
 }
 
 .first-link {
-    
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .login {
-    display: flex;
-    font-family: Neue Haas Unica, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #2a3e39;
-
+  display: flex;
+  font-family: Neue Haas Unica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2a3e39;
 }
 
 .cart {
-    width: 27px;
-
+  width: 27px;
 }
 
 .btn-cart {
-    border: none;
-    background-color: white;
-
+  border: none;
+  background-color: white;
 }
 
 .stickyBar-comboContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 30PX;
- 
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .top-logo1 {
-    width: 15px;
-    height: auto;
-    padding-right: 5px;
+  width: 15px;
+  height: auto;
+  padding-right: 5px;
 }
 
 .top-logo2 {
-    width: 15px;
-    height: auto;
-    padding-right: 5px;
+  width: 15px;
+  height: auto;
+  padding-right: 5px;
 }
 
 .top-logo3 {
-    width: 15px;
-    height: auto;
-    padding-right: 5px;
+  width: 15px;
+  height: auto;
+  padding-right: 5px;
 }
 
 .top-logo4 {
-    width: 15px;
-    height: auto;
-    padding-right: 5px;
+  width: 15px;
+  height: auto;
+  padding-right: 5px;
 }
 
 .top1 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .top2 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .top3 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .top4 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-
 .item-stickyBar_comboText {
-    font-family: Neue Haas Unica, sans-serif;
-    font-size: 11px;
-    line-height: 1.5;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    color: #fff;
+  font-family: Neue Haas Unica, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
 }
 
 .dropdown2 .right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-  .arrow {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid currentColor;
-  }
-  
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid currentColor;
+}
