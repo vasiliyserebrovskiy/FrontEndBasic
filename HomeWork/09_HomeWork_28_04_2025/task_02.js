@@ -18,32 +18,23 @@ SS - песчаная буря (видимость менее 10 км)
 function weatherDescription(weatherCode) {
   switch (weatherCode) {
     case "SQ":
-      console.log("шквал");
-      break;
+      return "шквал";
     case "PO":
-      console.log("пыльный вихрь");
-      break;
+      return "пыльны вихрь";
     case "FC":
-      console.log("торнадо");
-      break;
+      return "торнад";
     case "BR":
-      console.log("дымка (видимость от 1 до 9 км)");
-      break;
+      return "дымка видимость от 1 до 9 км)";
     case "HZ":
-      console.log("мгла (видимость менее 10 км)");
-      break;
+      return "мгла (идимость менее 10 км)";
     case "FU":
-      console.log("дым (видимость менее 10 км)");
-      break;
+      return "дым (вдимость менее 10 км)";
     case "DS":
-      console.log("пыльная буря (видимость менее 10 км)");
-      break;
+      return "пыльна буря (видимость менее 10 км)";
     case "SS":
-      console.log("песчаная буря (видимость менее 10 км)");
-      break;
+      return "песчаная буря (видимость менее 10 км)";
     default:
-      console.log("Код погоды не верный!");
-      break;
+      return "Код погоды не верный!";
   }
 }
 //Массив возможных значений + если нам придет что-то не то
@@ -62,7 +53,8 @@ const weatherValues = [
 ];
 // Генерим значение индекса от 0 до 11
 const weatherIndex = Math.floor(Math.random() * 11);
-//console.log("index = " + weatherIndex); // отладочная проверка
+// console.log("index  " + weatherIndex); // отладочная проверка
 
 const weatherCode = weatherValues[weatherIndex];
-weatherDescription(weatherCode);
+
+console.log(weatherDescription(weatherCode));
