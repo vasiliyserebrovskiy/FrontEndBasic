@@ -22,13 +22,13 @@ function weatherDescription(weatherCode) {
     case "PO":
       return "пыльны вихрь";
     case "FC":
-      return "торнад";
+      return "торнадо";
     case "BR":
       return "дымка видимость от 1 до 9 км)";
     case "HZ":
-      return "мгла (идимость менее 10 км)";
+      return "мгла (видимость менее 10 км)";
     case "FU":
-      return "дым (вдимость менее 10 км)";
+      return "дым (видимость менее 10 км)";
     case "DS":
       return "пыльна буря (видимость менее 10 км)";
     case "SS":
