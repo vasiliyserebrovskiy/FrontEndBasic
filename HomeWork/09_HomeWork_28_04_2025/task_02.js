@@ -20,7 +20,7 @@ function weatherDescription(weatherCode) {
     case "SQ":
       return "шквал";
     case "PO":
-      return "пыльны вихрь";
+      return "пыльный вихрь";
     case "FC":
       return "торнадо";
     case "BR":
@@ -30,7 +30,7 @@ function weatherDescription(weatherCode) {
     case "FU":
       return "дым (видимость менее 10 км)";
     case "DS":
-      return "пыльна буря (видимость менее 10 км)";
+      return "пыльная буря (видимость менее 10 км)";
     case "SS":
       return "песчаная буря (видимость менее 10 км)";
     default:
