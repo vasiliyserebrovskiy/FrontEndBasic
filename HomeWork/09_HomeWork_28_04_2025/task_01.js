@@ -11,13 +11,13 @@
 Выведите результат в консоль.
 */
 const temperature = Math.floor(Math.random() * 101) - 50;
-// console.log("Температура: " + temperature); // отладочная проверка
+//е console.log("Температура: " + temperature); // отладочная проверка
 
 if (temperature < 0) {
   console.log("Холодно");
-} else if (temperature >= 0 && temperature <= 20) {
+} else if (temperature <= 20) {
   console.log("Прохладно");
-} else if (temperature >= 21 && temperature <= 30) {
+} else if (temperature <= 30) {
   console.log("Тепло");
 } else if (temperature > 30) {
   console.log("Жарко!");

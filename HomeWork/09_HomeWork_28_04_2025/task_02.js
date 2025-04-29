@@ -15,7 +15,7 @@ DS - пыльная буря (видимость менее 10 км)
 SS - песчаная буря (видимость менее 10 км)
 */
 
-function weatherDescription(weatherCode) {
+function weatherDescription(weatherCode) { // Verbs are usually used to specify function names. ---> decodeWeather
   switch (weatherCode) {
     case "SQ":
       return "шквал";
