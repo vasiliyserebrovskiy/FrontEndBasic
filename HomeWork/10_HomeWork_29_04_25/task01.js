@@ -25,10 +25,15 @@ console.log("Измененный массив: ", newArray2);
 
 // Functions
 function createEdgeElementsSwappedArray(array) {
+  //лучше работать по индексам, так быстрее!!
+  //   const newArray = [...array];
+  //   const first = newArray.shift();
+  //   newArray.unshift(newArray.pop());
+  //   newArray.push(first);
   const newArray = [...array];
-  const first = newArray.shift();
-  newArray.unshift(newArray.pop());
-  newArray.push(first);
+  const temp = newArray[0];
+  newArray[0] = newArray[newArray.length - 1];
+  newArray[newArray.length - 1] = temp;
 
   return newArray;
 }
