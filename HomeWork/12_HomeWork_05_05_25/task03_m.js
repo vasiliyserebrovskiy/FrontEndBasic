@@ -2,9 +2,9 @@
 const oak = {
   height: 140,
   year: 2025,
-  grow(annualGrowth) {
-    this.height += annualGrowth;
-    this.year += 1;
+  grow(annualGrowth, numberOfYears) {
+    this.height += numberOfYears * annualGrowth;
+    this.year += numberOfYears;
   },
 };
 
@@ -16,6 +16,16 @@ const birch = {
   year: 2024,
 };
 
+console.log("Initial birch:", birch);
+
 const birchWithGrow = grow.bind(birch);
-birchWithGrow(100);
-console.log("After one year:", birch);
+birchWithGrow(100, 2);
+console.log("Birch after two years:", birch);
+
+//Use apply
+
+grow.apply(birch, [100, 2]);
+console.log("Birch after two more years:", birch);
+
+grow.call(birch, 100, 3);
+console.log("Birch after three more years:", birch);
