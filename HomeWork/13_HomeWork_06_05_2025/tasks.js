@@ -43,27 +43,37 @@ const brandAndTypeOfCars = cars.map(({ brand, isDiesel }) => ({
 console.log("Task 01:\n", brandAndTypeOfCars, "\n");
 
 // TASK 02:
-const dieselCars = cars.filter((car) => car.isDiesel === true);
+const dieselCars = cars.filter((car) => car.isDiesel);
 console.log("Task 02:\n", dieselCars, "\n");
 
 // TASK 03:
-const petrolCars = cars.filter((car) => car.isDiesel === false);
+const petrolCars = cars.filter((car) => !car.isDiesel);
 console.log("Task 03:\n", petrolCars, "\n");
 
 // TASK 04:
 const totalPetrolCarsPrice = cars.reduce(
-  (acc, car) => (car.isDiesel === false ? acc + car.price : acc),
+  (acc, car) => (!car.isDiesel ? acc + car.price : acc),
   0
 );
 console.log("Task 04: total petrol car price: ", totalPetrolCarsPrice, "\n");
+
+const totalPCarsPrice = petrolCars.reduce((acc, car) => acc + car.price, 0);
+console.log("Task 04 2:", totalPCarsPrice, "\n");
 
 //TASK 05:
 cars.forEach((car) => (car.price *= 1.2));
 console.log("Task 05: \n", cars, "\n");
 
 //TASK 06:
-const electroCar = { brand: "Tesla", price: 25000, isDiesel: false };
+const electroCar = { brand: "Tesla", price: 25000, isDiesel: false }; // не очень хорошо -> в массиве будет две ссылки на один и тот же объект
+// const carsWithoutDiesel = cars.map((car) => (car.isDiesel ? electroCar : car));
 const carsWithoutDiesel = cars.map((car) =>
-  car.isDiesel === true ? electroCar : car
-);
+  car.isDiesel ? { ...electroCar } : car
+); // так лучше, скопирует данные а не ссылку пихнет
 console.log("Task 06:\n", carsWithoutDiesel, "\n");
+
+// Лучше делать так!! В массив добавляются два разных объекта Tesla
+const carsWithoutDiesel2 = cars.map((car) =>
+  car.isDiesel ? { brand: "Tesla", price: 25000, isDiesel: false } : car
+);
+console.log("Task 06 2:\n", carsWithoutDiesel2, "\n");
