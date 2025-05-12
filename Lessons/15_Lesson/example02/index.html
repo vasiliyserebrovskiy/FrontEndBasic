@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/index.js" defer></script>
+    <title>DOM</title>
+  </head>
+  <body>
+    <form action="/back" method="post" id="student-form">
+      <span id="email-error-msg"></span>
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" />
+
+      <label for="german">Level of German language:</label>
+      <input type="text" name="german" id="german" />
+
+      <button type="submit">Add student to list</button>
+    </form>
+    <div id="students-container"></div>
+    <button type="button" id="remove-all-students">Remove all students</button>
+    <button type="button" id="sort-students-btn">
+      Sort by level of german
+    </button>
+    <form action="" id="filter-form">
+      <select name="german">
+        <option value="A1">A1</option>
+        <option value="A2">A2</option>
+        <option value="B1">B1</option>
+        <option value="B2">B2</option>
+        <option value="C1">C1</option>
+        <option value="C2">C2</option>
+      </select>
+      <button type="submit">Filter</button>
+    </form>
+  </body>
+</html>
