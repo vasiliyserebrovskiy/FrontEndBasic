@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>The list of animals</title>
+  </head>
+  <body>
+    <!-- Section for add new animal -->
+    <div class="body-add-new-animal">
+      <h2>Add new Animal</h2>
+      <div>
+        <form action="" class="form-add-new-animal" id="add-new-animal">
+          <div class="form-group">
+            <label for="nickname">Nickname:</label>
+            <input type="text" name="nickname" id="nickname" />
+          </div>
+
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" />
+          </div>
+
+          <div class="form-group">
+            <label for="breed">Breed:</label>
+            <input type="text" name="breed" id="breed" />
+          </div>
+          <span id="animal-error-msg" class="error-msg"></span>
+          <button type="submit" id="btn-submit-animal">Add animal</button>
+        </form>
+      </div>
+    </div>
+    <!-- Section for animals list -->
+    <div class="body-animals-list">
+      <h2>Animals list</h2>
+      <div class="animal-row animal-list-header">
+        <p>Nick Name</p>
+        <p>Age</p>
+        <p>Breed</p>
+      </div>
+      <div id="animals-list-container"></div>
+    </div>
+  </body>
+</html>
