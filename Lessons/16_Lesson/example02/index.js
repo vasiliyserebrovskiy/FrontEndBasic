@@ -9,7 +9,7 @@ console.log(text1.replace(/Hello/, "Good day"));
 
 //flags i and g
 const text2 = "Apple Orange apple orange Apple Orange apple orange";
-console.log(text2.replace(/Apple/, "bannana"));
+console.log(text2.replace(/Apple/, "banana"));
 //без флага заменяется только первое вхождение
 
 //флаг g позволяет работать со всеми вхождениями
