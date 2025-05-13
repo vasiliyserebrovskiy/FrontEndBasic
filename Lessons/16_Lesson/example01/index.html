@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Узнай свой идеальный вес</h1>
+    <form id="personal-data-form">
+      <span id="error-msg"></span>
+      <label for="height-input">Рост:</label>
+      <input type="text" name="height" id="height-input" />
+
+      <input type="radio" name="gender" id="male-choice" value="male" />
+      <label for="male-choice">Мужской</label>
+      <input type="radio" name="gender" id="female-choice" value="female" />
+      <label for="female-choice">Женский</label>
+      <button type="submit" id="submit-data">Рассчитать</button>
+    </form>
+
+    <p class="result-card" id="result-card"></p>
+  </body>
+</html>
