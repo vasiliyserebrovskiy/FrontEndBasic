@@ -8,6 +8,11 @@ html {
   background-color: antiquewhite;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 /* styles for add new animals*/
 .body-add-new-animal {
   display: flex;
