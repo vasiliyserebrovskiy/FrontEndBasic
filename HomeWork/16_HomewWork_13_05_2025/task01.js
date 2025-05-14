@@ -19,8 +19,10 @@ const validate = (string) => {
   //   const result = string.match(/^[a-z]19\d\dborn$/);
   const result = string.match(/^[a-z]19\d{2}born$/);
 
-  if (result) return true;
-  return false;
+  // if (result) return true;
+  // return false;
+  const regex = /^[a-z]19\d{2}born$/;
+  return regex.test(string); // with test function
 };
 
 console.log('validate("c1986born") :', validate("c1986born")); // true
