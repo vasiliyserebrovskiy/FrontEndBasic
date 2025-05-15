@@ -1,0 +1,36 @@
+{
+  "books": [
+    {
+      "title": "The Fellowship of the Ring",
+      "author": "J.R.R. Tolkien",
+      "year": 1954,
+      "genre": "Fantasy",
+      "isbn": "978-0261103573",
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/8e/The_Fellowship_of_the_Ring_cover.gif"
+    },
+    {
+      "title": "The Two Towers",
+      "author": "J.R.R. Tolkien",
+      "year": 1954,
+      "genre": "Fantasy",
+      "isbn": "978-0261102361",
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a1/The_Two_Towers_cover.gif"
+    },
+    {
+      "title": "The Return of the King",
+      "author": "J.R.R. Tolkien",
+      "year": 1955,
+      "genre": "Fantasy",
+      "isbn": "978-0261102378",
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/11/The_Return_of_the_King_cover.gif"
+    },
+    {
+      "title": "The Silmarillion",
+      "author": "J.R.R. Tolkien",
+      "year": 1977,
+      "genre": "Mythopoeia",
+      "isbn": "978-0618391110",
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/db/Silmarillion.png"
+    }
+  ]
+}
