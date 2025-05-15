@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+}
+h1 {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.wine-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  /* border: 2px solid black; */
+  /* background-color: lightgreen; */
+}
+
+.wine {
+  border: 2px solid black;
+  border-radius: 10px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* height: 300px; */
+}
+
+.wine-container div {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wine-container p {
+  text-align: center;
+}
