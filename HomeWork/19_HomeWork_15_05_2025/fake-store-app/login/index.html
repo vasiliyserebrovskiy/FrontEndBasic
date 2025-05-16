@@ -3,25 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
     <script src="../js/login.js" defer></script>
     <title>Login</title>
   </head>
   <body>
     <h1>Login</h1>
-    <form id="login-form">
+    <form id="login-form" class="login-form">
       <p>john@mail.com changeme</p>
-      <br />
+
       <span id="login-form-err"></span>
-      <label for="email">Email:</label>
-      <input type="text" placeholder="e-mail" id="email" name="email" />
-      <label for="password">Email:</label>
-      <input
-        type="password"
-        placeholder="password"
-        id="password"
-        name="password"
-      />
-      <button type="submit">Login</button>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" placeholder="e-mail" id="email" name="email" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+        />
+      </div>
+      <button type="submit" class="submit-btn">Login</button>
     </form>
   </body>
 </html>
