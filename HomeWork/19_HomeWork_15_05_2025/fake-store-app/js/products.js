@@ -8,10 +8,10 @@ if (!localStorage.getItem("access_token")) {
 
 async function fetchProducts() {
   const accessToken = localStorage.getItem("access_token");
-  console.log("accessToken:", accessToken);
+  //   console.log("accessToken:", accessToken);
 
   try {
-    const res = await fetch("https://api.escuelajs.co/api/v1/products1");
+    const res = await fetch("https://api.escuelajs.co/api/v1/products");
 
     if (!res.ok) {
       throw new Error("Error fetching products list!");
@@ -21,8 +21,8 @@ async function fetchProducts() {
     const products = await res.json();
     console.log(products);
   } catch (err) {
-    console.log("test error log");
-    console.log(err.message);
+    // console.log("test error log");
+    // console.log(err.message);
     errorSpanElement.textContent = err.message;
   }
 }
