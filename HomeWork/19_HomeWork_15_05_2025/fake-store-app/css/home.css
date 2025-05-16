@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: bisque;
 }
 
 .body-menu {
@@ -15,9 +16,7 @@ body {
   font-size: larger;
   font-weight: bold;
   font-size: 25px;
-  border: 2px solid darkgreen;
-  /* border-radius: 5px; */
-  background-color: aquamarine;
+  background-color: bisque;
 }
 
 nav {
