@@ -6,9 +6,10 @@ if (!localStorage.getItem("access_token")) {
   window.location.replace("/login");
 }
 
+fetchProducts();
+
 async function fetchProducts() {
   const accessToken = localStorage.getItem("access_token");
-  //   console.log("accessToken:", accessToken);
 
   try {
     const res = await fetch("https://api.escuelajs.co/api/v1/products");
@@ -28,22 +29,18 @@ async function fetchProducts() {
       const productPriceElement = document.createElement("p");
       const productDescriptionElement = document.createElement("p");
 
-      console.log("category.name: ", category.name);
-      console.log("title:", title);
-      console.log("price:", price);
-      console.log("description:", description);
-
-      productCategoryElement.textContent = category.name;
-      productTitleElement.textContent = title;
-      // productImageElement.src = images[0];
-      //productImageElement.alt = "Image of " + title;
-      productPriceElement.textContent = price;
-      productDescriptionElement.textContent = description;
+      productCategoryElement.textContent = "Category: " + category.name;
+      productTitleElement.textContent = "Title: " + title;
+      productImageElement.src = images[0];
+      productImageElement.alt = "Image of " + title;
+      productPriceElement.textContent = "Price: " + price;
+      productDescriptionElement.textContent = "Description: " + description;
 
       //collect all element together
       productInfoContainer.append(
         productCategoryElement,
         productTitleElement,
+        productImageElement,
         productPriceElement,
         productDescriptionElement
       );
@@ -56,5 +53,3 @@ async function fetchProducts() {
     errorSpanElement.textContent = err.message;
   }
 }
-
-fetchProducts();

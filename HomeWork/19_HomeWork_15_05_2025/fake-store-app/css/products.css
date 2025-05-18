@@ -35,9 +35,16 @@ span {
 }
 
 .body-main-div {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; */
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .body-main-div div {
@@ -48,8 +55,18 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .body-main-div p {
-  text-align: center;
+  /* text-align: center; */
+  text-align: justify;
+}
+
+.body-main-div img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* или contain, см. ниже */
 }
