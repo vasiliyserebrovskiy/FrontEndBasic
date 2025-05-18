@@ -70,3 +70,14 @@ span {
   display: block;
   object-fit: cover; /* или contain, см. ниже */
 }
+
+.search-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-btn-container button {
+  color: white;
+}
