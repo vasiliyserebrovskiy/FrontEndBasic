@@ -34,6 +34,22 @@ span {
   margin-top: 20px;
 }
 
-/* .body-main-div {
+.body-main-div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
 
-} */
+.body-main-div div {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-main-div p {
+  text-align: center;
+}

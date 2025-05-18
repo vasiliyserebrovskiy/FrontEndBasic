@@ -15,17 +15,46 @@ async function fetchProducts() {
 
     if (!res.ok) {
       throw new Error("Error fetching products list!");
-      console.log("WE ARE HERE!");
     }
 
     const products = await res.json();
-    console.log(products);
+
+    // here we need to render our information
+    products.forEach(({ title, price, description, images, category }) => {
+      const productInfoContainer = document.createElement("div");
+      const productCategoryElement = document.createElement("p");
+      const productTitleElement = document.createElement("p");
+      const productImageElement = document.createElement("img");
+      const productPriceElement = document.createElement("p");
+      const productDescriptionElement = document.createElement("p");
+
+      console.log("category.name: ", category.name);
+      console.log("title:", title);
+      console.log("price:", price);
+      console.log("description:", description);
+
+      productCategoryElement.textContent = category.name;
+      productTitleElement.textContent = title;
+      // productImageElement.src = images[0];
+      //productImageElement.alt = "Image of " + title;
+      productPriceElement.textContent = price;
+      productDescriptionElement.textContent = description;
+
+      //collect all element together
+      productInfoContainer.append(
+        productCategoryElement,
+        productTitleElement,
+        productPriceElement,
+        productDescriptionElement
+      );
+      //add to main container
+      divContainer.appendChild(productInfoContainer);
+    });
+
+    //
   } catch (err) {
-    // console.log("test error log");
-    // console.log(err.message);
     errorSpanElement.textContent = err.message;
   }
 }
 
-//   errorSpanElement.innerText = "";
 fetchProducts();
