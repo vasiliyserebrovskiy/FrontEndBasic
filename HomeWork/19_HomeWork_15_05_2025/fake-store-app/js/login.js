@@ -1,7 +1,3 @@
-// then --> await
-// await можно использовать только внутри функции которая является асинхронной
-//если функция является асинхронной, то при объявлении функции указывается слово async
-
 const form = document.getElementById("login-form");
 const errElement = document.getElementById("login-form-err");
 
@@ -35,15 +31,10 @@ async function fetchLogin() {
     const obj = await res.json();
 
     const { access_token } = obj;
-    //console.log(access_token);
-    localStorage.setItem("access_token", access_token); // Сохраняем полученный нами токен в localStorage
-    //в браузере есть способы хранения:
-    // 1 sessionStorage - только в течении сессии (сохраняем сами)
-    // 2 localStorage - хранит пока не удалили
-    // 3 cookies - инфа на сайте, которая может добавляться к запросам, сохраняется сама
+
+    localStorage.setItem("access_token", access_token);
 
     errElement.innerText = "";
-    // window.location.href = "/profile";
     window.location.replace("/profile");
   } catch (err) {
     errElement.innerText = err.message;

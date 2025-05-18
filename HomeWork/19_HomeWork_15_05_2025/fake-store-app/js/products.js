@@ -9,7 +9,6 @@ if (!localStorage.getItem("access_token")) {
 
 fetchProducts();
 
-// ------ Function section -------
 async function fetchProducts() {
   const accessToken = localStorage.getItem("access_token");
   //Products categories
@@ -46,9 +45,12 @@ async function fetchProducts() {
       productsCategory.forEach((category) => {
         const buttonElement = document.createElement("button");
         buttonElement.textContent = category;
+        buttonElement.classList.add("sort-button");
         buttonElement.addEventListener("click", () => {
-          console.log("categoty on click", category);
-
+          document
+            .querySelectorAll(".sort-button")
+            .forEach((btn) => btn.classList.remove("active"));
+          buttonElement.classList.add("active");
           if (category === "All products") {
             divContainer.innerHTML = "";
             renderProducts(products);

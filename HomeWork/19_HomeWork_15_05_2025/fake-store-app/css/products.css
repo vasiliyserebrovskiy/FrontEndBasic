@@ -35,9 +35,6 @@ span {
 }
 
 .body-main-div {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
@@ -48,6 +45,10 @@ span {
 }
 
 .body-main-div div {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+
   border: 1px solid black;
   border-radius: 15px;
   padding: 15px;
@@ -60,7 +61,6 @@ span {
 }
 
 .body-main-div p {
-  /* text-align: center; */
   text-align: justify;
 }
 
@@ -68,7 +68,7 @@ span {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover; /* или contain, см. ниже */
+  object-fit: cover;
 }
 
 .search-btn-container {
@@ -78,6 +78,22 @@ span {
   gap: 20px;
 }
 
-.search-btn-container button {
-  color: white;
+.sort-button {
+  padding: 5px 20px;
+  margin: 5px;
+  background-color: #7c5435;
+  color: #ffe8b0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.sort-button:hover {
+  background-color: #d98e04;
+}
+
+.sort-button.active {
+  background-color: #b86f02;
 }

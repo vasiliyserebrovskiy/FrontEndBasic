@@ -47,10 +47,10 @@ input {
 
 .submit-btn {
   padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
+  background-color: #7c5435;
+  color: #ffe8b0;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -58,7 +58,7 @@ input {
 }
 
 .submit-btn:hover {
-  background-color: #45a049;
+  background-color: #d98e04;
   transform: scale(1.03);
 }
 .submit-btn:active {
