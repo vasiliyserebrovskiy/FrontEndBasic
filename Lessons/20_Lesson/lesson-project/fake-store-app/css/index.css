@@ -1,0 +1,26 @@
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.product-card {
+  display: flex;
+  width: 200px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgray;
+  border-radius: 18px;
+  gap: 10px;
+  padding: 16px;
+}
+
+.product-card img {
+  width: 150px;
+}
+
+.title {
+  font-weight: bold;
+}
