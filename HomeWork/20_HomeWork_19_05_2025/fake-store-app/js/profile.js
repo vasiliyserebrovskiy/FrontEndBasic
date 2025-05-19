@@ -23,6 +23,9 @@ async function fetchProfile() {
 
   fullName.innerText = name;
   avatarElement.src = avatar;
+  avatarElement.referrerPolicy = "no-referrer";
+  avatarElement.crossOrigin = "anonymous";
+
   emailElement.innerText = "Email: " + email;
 }
 
