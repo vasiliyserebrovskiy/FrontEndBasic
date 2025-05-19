@@ -25,26 +25,24 @@ nav {
   gap: 30px;
 }
 
-.info-content {
+.users-container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* width: 200px; */
 }
 
-.main-info {
+.user-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin: 30px;
-  width: 300px;
   border: 2px solid darkgreen;
   border-radius: 20px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-  padding: 20px;
 }
 
-.avatar-img {
+.user-div img {
   width: 200px;
   height: 200px;
   object-fit: cover;

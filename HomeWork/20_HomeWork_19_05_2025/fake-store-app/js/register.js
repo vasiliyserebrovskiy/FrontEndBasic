@@ -21,7 +21,7 @@ async function fetchNewUser(user) {
   const res = await fetch("https://api.escuelajs.co/api/v1/users/", {
     method: "POST",
     body: JSON.stringify(user),
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
   });
   if (res.status === 201) {
     window.location.replace("/login");
