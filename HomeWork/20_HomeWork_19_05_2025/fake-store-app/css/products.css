@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+.body-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: bisque;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+span {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: red;
+  margin-top: 20px;
+}
+
+.body-main-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.body-main-div div {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.body-main-div p {
+  text-align: justify;
+}
+
+.body-main-div img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.search-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sort-button {
+  padding: 5px 20px;
+  margin: 5px;
+  background-color: #7c5435;
+  color: #ffe8b0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.sort-button:hover {
+  background-color: #d98e04;
+}
+
+.sort-button.active {
+  background-color: #b86f02;
+}
