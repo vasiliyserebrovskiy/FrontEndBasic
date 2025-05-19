@@ -71,13 +71,6 @@ span {
   object-fit: cover;
 }
 
-.search-btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
 .sort-button {
   padding: 5px 20px;
   margin: 5px;
@@ -96,4 +89,92 @@ span {
 
 .sort-button.active {
   background-color: #b86f02;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #7c5435;
+  color: #ffe8b0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #d98e04;
+  transform: scale(1.03);
+}
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+.product-btn-delete {
+  padding: 5px 10px;
+  background-color: #7c5435;
+  color: #ffe8b0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product-btn-delete:hover {
+  background-color: #d98e04;
+  transform: scale(1.03);
+}
+.product-btn-delete:active {
+  transform: scale(0.98);
+}
+
+.filter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.category-select {
+  padding: 10px 20px;
+  background-color: #ffe8b0;
+  color: #7c5435;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  appearance: none;
+}
+
+.category-select:hover {
+  background-color: #f5d991;
+  transform: scale(1.03);
+}
+
+.category-select:active {
+  transform: scale(0.98);
+}
+
+.category-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.category-select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #7c5435;
 }
