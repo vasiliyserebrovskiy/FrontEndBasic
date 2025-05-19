@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  padding: 20px;
+}
+
+.parameter-group {
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px; */
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.parameter-group label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #7c5435;
+  font-size: 20px;
+}
+
+.parameter-group input {
+  padding: 10px;
+  border: 2px solid #7c5435;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.parameter-group input:focus {
+  border-color: #d98e04;
+  box-shadow: 0 0 5px rgba(217, 142, 4, 0.5);
+}
+
+.category-select {
+  padding: 10px;
+  border: 2px solid #7c5435;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%237c5435' viewBox='0 0 16 16'><path d='M4 6l4 4 4-4z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-select:focus {
+  border-color: #d98e04;
+  box-shadow: 0 0 5px rgba(217, 142, 4, 0.5);
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #7c5435;
+  color: #ffe8b0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #d98e04;
+  transform: scale(1.03);
+}
+.submit-btn:active {
+  transform: scale(0.98);
+}

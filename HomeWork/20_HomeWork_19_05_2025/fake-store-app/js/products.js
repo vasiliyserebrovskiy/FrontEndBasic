@@ -81,7 +81,7 @@ function renderProducts(products) {
   while (divContainer.firstChild) {
     divContainer.removeChild(divContainer.firstChild);
   }
-  products.forEach(({ title, price, description, images, category }) => {
+  products.forEach(({ title, price, description, images, category, id }) => {
     const productInfoContainer = document.createElement("div");
     const productCategoryElement = document.createElement("p");
     const productTitleElement = document.createElement("p");

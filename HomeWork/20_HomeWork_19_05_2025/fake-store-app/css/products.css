@@ -178,3 +178,8 @@ span {
   pointer-events: none;
   color: #7c5435;
 }
+
+a.submit-btn {
+  text-decoration: none;
+  display: inline-block;
+}
